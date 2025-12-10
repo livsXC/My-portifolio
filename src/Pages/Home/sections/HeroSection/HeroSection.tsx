@@ -40,25 +40,26 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-        <StyledHero>
-          {/* Fundo animado */}
-        <Box
-            position="absolute"
-            top={0}
-            left={0}
-            width="100%"
-            height="100%"
-            sx={{
-              background: "linear-gradient(120deg, #0d0d0d, #1a1a1a, #6C63FF, #2c2c2c)",
-              backgroundSize: "400% 400%",
-              animation: "gradientMove 15s ease infinite",
-              "@keyframes gradientMove": {
-                "0%": { backgroundPosition: "0% 50%" },
-                "50%": { backgroundPosition: "100% 50%" },
-                "100%": { backgroundPosition: "0% 50%" },
-            },
-          }}
-        />
+    <StyledHero>
+      {/* Fundo animado */}
+      <Box
+        position="absolute"
+        top={0}
+        left={0}
+        width="100%"
+        height="100%"
+        sx={{
+          background:
+            "linear-gradient(120deg, #0d0d0d, #1a1a1a, #6C63FF, #2c2c2c)",
+          backgroundSize: "400% 400%",
+          animation: "gradientMove 15s ease infinite",
+          "@keyframes gradientMove": {
+            "0%": { backgroundPosition: "0% 50%" },
+            "50%": { backgroundPosition: "100% 50%" },
+            "100%": { backgroundPosition: "0% 50%" },
+          },
+        }}
+      />
 
       <Container maxWidth="md" sx={{ position: "relative", zIndex: 1 }}>
         {/* Nome principal */}
@@ -68,6 +69,7 @@ const HeroSection: React.FC = () => {
             fontWeight: "bold",
             color: "primary.contrastText",
             mb: 1,
+            fontSize: { xs: "2rem", sm: "3rem" }, // responsivo
           }}
         >
           Lívia Rosario
@@ -82,7 +84,14 @@ const HeroSection: React.FC = () => {
         />
 
         {/* Botões */}
-        <Box mt={5} display="flex" justifyContent="center" gap={3}>
+        <Box
+          mt={5}
+          display="flex"
+          justifyContent="center"
+          gap={3}
+          flexDirection={{ xs: "column", sm: "row" }} // coluna no celular
+          alignItems={{ xs: "stretch", sm: "center" }} // largura total no mobile
+        >
           {/* Botão branco */}
           <StyledButton
             onClick={handleDownload}
@@ -90,9 +99,11 @@ const HeroSection: React.FC = () => {
             sx={{
               backgroundColor: "#fff",
               color: "#6C63FF",
-              "&:hover": {
-                backgroundColor: "#f2f2f2",
-              },
+              "&:hover": { backgroundColor: "#f2f2f2" },
+              px: { xs: 2, sm: 3 },
+              py: { xs: 1, sm: 1.5 },
+              fontSize: { xs: "0.85rem", sm: "1rem" },
+              width: { xs: "100%", sm: "auto" }, // ocupa largura total no celular
             }}
           >
             Download CV
@@ -105,9 +116,11 @@ const HeroSection: React.FC = () => {
             sx={{
               backgroundColor: "#6C63FF",
               color: "#fff",
-              "&:hover": {
-                backgroundColor: "#5a52e0",
-              },
+              "&:hover": { backgroundColor: "#5a52e0" },
+              px: { xs: 2, sm: 3 },
+              py: { xs: 1, sm: 1.5 },
+              fontSize: { xs: "0.85rem", sm: "1rem" },
+              width: { xs: "100%", sm: "auto" },
             }}
           >
             Entre em contato

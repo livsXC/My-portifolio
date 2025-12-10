@@ -7,7 +7,7 @@ import {
 import { SiFirebase, SiMongodb, SiFlutter } from "react-icons/si";
 
 const skills = [
-  { name: "Bootstrap",  icon: <FaBootstrap color="#7952B3" size={40} />, orbit: 4, angle: 0.0 },
+  { name: "Bootstrap",  icon: <FaBootstrap color="#7952B3" size={40} />, orbit: 4, angle: 0.0, orbitMobile: 3, angleMobile: 0, },
   { name: "HTML",       icon: <FaHtml5 color="#E34F26" size={40} />,     orbit: 1, angle: 85 },
   { name: "Python",     icon: <FaPython color="#02569B" size={40} />,    orbit: 1, angle: 330.3 },
   { name: "MongoDB",    icon: <SiMongodb color="#4DB33D" size={40} />,   orbit: 4, angle: 39.4 },
@@ -91,6 +91,10 @@ const Title = styled.h2`
     color: #6c63ff;
     font-size: 3.9rem;
   }
+
+  @media (max-width: 320px){
+    font-size: 2rem;
+  }
 `;
 
 const OrbitContainer = styled.div`
@@ -100,6 +104,9 @@ const OrbitContainer = styled.div`
   aspect-ratio: 1 / 1;
   margin: 0 auto;
   overflow: hidden;
+
+  @media (max-width: 480px) {
+    max-width: 320px;
 `;
 
 const Orbit = styled.div<{ size: number }>`
@@ -124,14 +131,18 @@ const OrbitItem = styled.div<{ angle: number; radius: number }>`
   align-items: center;
   justify-content: center;
   z-index: 2;
+
+  @media (max-width: 480px) {
+    margin: -15px; 
+  }
 `;
 
 const IconInner = styled.div`
   background: rgba(255,255,255,0.03);
   border-radius: 50%;
   backdrop-filter: blur(6px);
-  width: clamp(42px, 6vw, 56px);
-  height: clamp(42px, 6vw, 56px);
+  width: clamp(36px, 6vw, 64px);   /* cresce conforme a tela */
+  height: clamp(36px, 6vw, 64px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +158,13 @@ const IconInner = styled.div`
     transform: scale(1.18);
     box-shadow: 0 0 26px rgba(108,99,255,0.35);
   }
+
+  @media (max-width: 480px) {
+    width: 44px;   /* ícones maiores no celular */
+    height: 44px;
+  }
 `;
+
 
 const Tooltip = styled.div`
   position: absolute;

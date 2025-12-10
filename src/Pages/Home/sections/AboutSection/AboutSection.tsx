@@ -104,6 +104,10 @@ const Title = styled.h2`
     color: #6c63ff;
     font-size: 3.9rem;
   }
+  
+  @media (max-width: 320px){
+    font-size: 2rem;
+  }
 `;
 
 const AboutText = styled.p`
@@ -115,15 +119,25 @@ const AboutText = styled.p`
   strong {
     color: #fff;
   }
+  
+  @media (max-width: 320px){
+    font-size: 0.8rem;
+  }
 `;
 
 const IconsWrapper = styled.div`
   display: flex;
   justify-content: center;
-  gap: 85px;
+  gap: 50px;
   margin-top: 50px;
   flex-wrap: wrap;
+
+  @media (max-width: 320px){
+    font-size: 0.8rem;
+    
+  }
 `;
+
 
 const ContactItem = styled.div`
   display: flex;

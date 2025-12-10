@@ -112,6 +112,10 @@ const Container = styled.section`
   padding: 80px 40px;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 480px) {
+    padding: 40px 20px; /* reduz padding no mobile */
+  }
 `;
 
 const Columns = styled.div`
@@ -121,6 +125,11 @@ const Columns = styled.div`
   max-width: 1100px;
   gap: 200px;
   flex-wrap: wrap;
+  
+  @media (max-width: 768px) {
+    flex-direction: column; /* empilha colunas no mobile */
+    gap: 40px;              /* reduz o espaço */
+  }
 `;
 
 const LeftColumn = styled.div`
@@ -144,9 +153,12 @@ const Title = styled.h2`
     color: #6c63ff;
     font-size: 3.9rem;
   }
+
+  @media (max-width: 480px) {
+    font-size: 2rem; /* menor título no celular */
+    margin-bottom: 20px;
+  }
 `;
-
-
 
 const Item = styled.div`
   display: flex;
@@ -173,6 +185,11 @@ const Item = styled.div`
     height: calc(100% - 20px);
     background: rgba(255, 255, 255, 0.1);
   }
+    
+  @media (max-width: 480px) {
+    flex-direction: column; /* conteúdo em coluna no celular */
+    align-items: flex-start;
+  }
 `;
 
 const Dot = styled.div`
@@ -192,20 +209,40 @@ const Content = styled.div`
     font-size: 1rem;
     margin-bottom: 5px;
     color: #fff;
+
+    @media (max-width: 480px) {
+      font-size: 0.9rem;   /* menor título no celular */
+      margin-bottom: 4px;
+    }
   }
 
   p {
-    font-size: 0.9rem, span;
+    font-size: 0.9rem;
     color: #ccc;
     margin-bottom: 3px;
+
+    @media (max-width: 480px) {
+      font-size: 0.8rem;   /* reduz fonte no celular */
+      margin-bottom: 2px;
+    }
   }
 
   small {
     font-size: 0.85rem;
     color: #aaa;
     line-height: 1.5;
+
+    @media (max-width: 480px) {
+      font-size: 0.75rem;  /* menor legenda */
+      line-height: 1.4;
+    }
   }
+
+  @media (max-width: 480px) {
+      margin-left: 25px; 
+    }
 `;
+
 
 const Year = styled.div`
   font-size: 0.9rem;
@@ -213,4 +250,9 @@ const Year = styled.div`
   margin-left: 20px;
   white-space: nowrap;
   align-self: flex-start;
+
+  @media (max-width: 480px) {
+    margin-left: 25px; /* evita quebra no mobile */
+    margin-top: 10px;
+  }
 `;
