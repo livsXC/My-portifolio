@@ -27,7 +27,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Imersão de Análise de Dados",
     subtitle: "Setembro/2023",
-    srcImg: "/src/assets/images/project-dados.png",
+    srcImg: "public/img/project-dados.png",
     description: "Dashboard interativo em Python com Streamlit para explorar e visualizar dados salariais da área de dados. Permite analisar tendências por cargo, experiência, contrato, localização...",
     technologies: "Python, Pandas, Plotly e Streamlit",
     websiteURL: "https://imers-o-dados-com-python-c2hhpjanno5rqhp8gzxbnd.streamlit.app/",
@@ -37,7 +37,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Sistema Avida Clinic",
     subtitle: "Julho/2025",
-    srcImg: "/src/assets/images/project-avida.png",
+    srcImg: "public/img/project-avida.png",
     description: "Desenvolvi um aplicativo web para auxiliar profissionais de saúde para organizar suas consultas e informações de pacientes de forma prática e eficiente.",
     technologies: "JavaScript, HTML, CSS, Python e Flask",
     websiteURL: "https://drive.google.com/file/d/1MrDh5E_4kq9-LqZJwvipj9U9HWm4Z9wg/view?usp=drive_link",
@@ -47,7 +47,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Meu primeiro Cadastro",
     subtitle: "Nov/2024",
-    srcImg: "/src/assets/images/project-cadastro.png",
+    srcImg: "public/img/project-cadastro.png",
     description: "Sistema web de login e cadastro de usuários, criado para praticar autenticação e manipulação de dados. Projeto voltado ao aperfeiçoamento em desenvolvimento full-stack.",
     technologies: "PHP, HTML, CSS, JavaScript e MongoDB,",
     websiteURL: "#",
