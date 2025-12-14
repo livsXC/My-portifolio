@@ -17,7 +17,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Spotify",
     subtitle: "Março/2025",
-    srcImg: "/src/assets/images/project-spotify.png",
+    srcImg: "public/img/project-spotify.png",
     description: "Clone do Spotify que simula reprodução e navegação por playlists usando uma API local. Projeto para treinar manipulação de DOM, estilização com dados dinâmicos.",
     technologies: "JavaScript, HTML, CSS, Python e Flask",
     websiteURL: "https://livsxc.github.io/Spotify/",
