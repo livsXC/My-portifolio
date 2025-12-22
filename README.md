@@ -33,9 +33,6 @@ Essa experiência me permitiu aplicar conceitos de frontend e explorar ferrament
 
 ---
 
-##📬 Contato
-- LinkedIn: www.linkedin.com/in/lívia-rosário
-
 ## 📦 Instalação e uso
 
 ```bash
