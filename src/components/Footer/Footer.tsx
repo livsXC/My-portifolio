@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             </ColorIconButton>
           </Box>
           <Typography textAlign="center">
-            © 2025 Livia Rosario - All rights reserved
+            © 2026 Livia Rosario - All rights reserved
           </Typography>
         </Container>
       </Box>

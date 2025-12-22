@@ -15,13 +15,22 @@ interface ProjectCardProps {
 
 const projects: ProjectCardProps[] = [
   {
-    title: "Spotify",
-    subtitle: "Março/2025",
-    srcImg: "/img/project-spotify.png",
-    description: "Clone do Spotify que simula reprodução e navegação por playlists usando uma API local. Projeto para treinar manipulação de DOM, estilização com dados dinâmicos.",
-    technologies: "JavaScript, HTML, CSS, Python e Flask",
-    websiteURL: "https://livsxc.github.io/Spotify/",
-    codeURL: "https://github.com/livsXC/Spotify.git",
+    title: "Meu Portifolio",
+    subtitle: "Janeiro/2026",
+    srcImg: "/img/project-portfolio.png",
+    description: "Primeiro projeto de portfólio, onde aprendi a estruturar interfaces, aplicar boas práticas e otimizar o desenvolvimento, consolidando minha experiência inicial em frontend.",
+    technologies: "React, TypeScript, Vite e ESLint",
+    websiteURL: "https://my-portifolio-eight-gamma.vercel.app/",
+    codeURL: "https://github.com/livsXC/Bootcamp_Nexa-MLeGenAI.git",
+  },
+  {
+    title: "Bootcamp Nexa-Machine Learning e GenAI",
+    subtitle: "Dezembro/2025",
+    srcImg: "/img/project-nexa.png",
+    description: "Participei do Bootcamp Nexa - Machine Learning e GenAI na Prática (DIO + AWS), aprendendo IA generativa, low-code e criando soluções reais com foco em dados e negócios.",
+    technologies: "Amazon SageMaker Canvas, AWS Cloud ",
+    websiteURL: "#",
+    codeURL: "https://github.com/livsXC/Bootcamp_Nexa-MLeGenAI.git",
   },
   
   {
@@ -34,6 +43,7 @@ const projects: ProjectCardProps[] = [
     codeURL: "https://github.com/livsXC/Imers-o-Dados-com-Python.git",
   },
 
+  
   {
     title: "Sistema Avida Clinic",
     subtitle: "Julho/2025",
@@ -45,14 +55,35 @@ const projects: ProjectCardProps[] = [
   },
 
   {
+    title: "Chatbot Inteligente com PDFs",
+    subtitle: "Maio/2025",
+    srcImg: "/img/project-chatbot.png",
+    description: "Chatbot inteligente com PDFs, criado no desafio DIO + Microsoft usando Azure AI Hub. Responde perguntas com IA generativa, embeddings e busca vetorial.",
+    technologies: "Azure AI Studio/AI Hub, Cognitive Search, Blob Storage",
+    websiteURL: "#",
+    codeURL: "https://github.com/livsXC/Chatbotpdf-Azure.git",
+  },
+
+  {
+    title: "Spotify",
+    subtitle: "Março/2025",
+    srcImg: "/img/project-spotify.png",
+    description: "Clone do Spotify que simula reprodução e navegação por playlists usando uma API local. Projeto para treinar manipulação de DOM, estilização com dados dinâmicos.",
+    technologies: "JavaScript, HTML, CSS, Python e Flask",
+    websiteURL: "https://livsxc.github.io/Spotify/",
+    codeURL: "https://github.com/livsXC/Spotify.git",
+  },
+
+  {
     title: "Meu primeiro Cadastro",
-    subtitle: "Nov/2024",
+    subtitle: "Novembro/2024",
     srcImg: "/img/project-cadastro.png",
     description: "Sistema web de login e cadastro de usuários, criado para praticar autenticação e manipulação de dados. Projeto voltado ao aperfeiçoamento em desenvolvimento full-stack.",
-    technologies: "PHP, HTML, CSS, JavaScript e MongoDB,",
+    technologies: "PHP, HTML, CSS, JavaScript e MongoDB",
     websiteURL: "#",
     codeURL: "https://github.com/livsXC/Meu-Primeiro-Acesso-PHP.git",
   },
+
 ];
 
 // ===== Componente =====
